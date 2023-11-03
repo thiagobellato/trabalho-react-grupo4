@@ -7,8 +7,9 @@ export default function Header() {
     <header>
       {/* <h2>Empresa ABC</h2> */}
       <div className="menu">
-            <div id="titulo">
-              Brasilianas
+            <div id="tituloHeader">
+              
+              <img src="../../../src/assets/Brasilianas.svg" alt="logo" />
                 </div>
             <nav>
               <ul>
@@ -20,7 +21,7 @@ export default function Header() {
             <Link to={'/empresa'}><button className="button">Empresa</button></Link>
                 </li>
                 <li>
-            <Link to={'/noticias'}><button className="button">Noticias</button></Link>
+            <Link to={'/produto'}><button className="button">Produtos</button></Link>
                 </li>
                 <li>
             <Link to={'/sobre'}><button className="button"> Sobre</button></Link>

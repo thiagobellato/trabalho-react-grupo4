@@ -10,68 +10,46 @@ nav ul{
     
 }
 button{
-    background-color: yellow;
+    background-color: #FFDE59;
     color: green;
     border-radius: 0%;
 }
 
 
-.button:hover{
+a:hover{
     
-    transition-duration: 7000ms ease;
-    background-color: aliceblue;
+    transition-duration: 300ms;
+    /* background-color: aliceblue; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
+    transform-origin: left;
+    border-top: 2px solid black;
+}
+a:hover::before{
+    transition-duration: 300ms ease;
+    border-bottom: #FFF;
+}
+a:hover::after{
+    transition-duration: 300ms ease;
+    border-bottom: #FFF;
 }
 
-/* button:hover{
-    background-color: white;
-    color: rgb(0, 92, 0);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
-} */
-
-
-
-
-
-ul{
-    display: flex;
-
-    justify-content: flex-end;
-   
-}
-
-#titulo{
-    display: flex;
-    /* justify-content: flex-start; */
-    align-items: center;
-    /* margin-left: 10px; */
-    font-size: 30px;
-    background-color: yellow;
-    color: blue;
-    font-weight: 900;
-    padding: 10px;
-    border-top-left-radius: 90%;
-    border-start-end-radius: 90% ;
-    border-bottom-left-radius: 20% ;
-    border-bottom-right-radius: 20% ;
-    border-color: greenyellow;
-    border: 10px solid;
-    font-family: monospace;
-    /* width: 30%;
-    height: 100%; */
-    margin-left: 5px;
-}
 .menu{
      display: flex;
     margin-right: 40px;
-    
+    background-color: #FFDE59;
     justify-content:space-between ;
     padding:4px ;
+    width: 100vh;
 }
 
 header{
     width: 100%;
+    background-color: #FFDE59;
 }
+
+img{
+    width:  250px;
+    height: 80px;
+}
+
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function HeaderMain() {
   return (
-    <header>
+    <header className='headerMain'>
         <div className="container">
           <div className="logo">
             <h1>Cadastro de Posts</h1>

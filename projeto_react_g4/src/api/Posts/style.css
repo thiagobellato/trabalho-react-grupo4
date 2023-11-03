@@ -1,18 +1,34 @@
-main {
+ main {
     display: flex;
     justify-content: center;
 
 
     padding: 3rem 0;
 }
+#ee {
 
-.card-post {
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+
+    
+}
+#ee > h1{
+    width: max-content;
+    color: black;
+}
+
+#titulo{
+    background-color: ;
+}
+
+#card-post1, #card-post2, #card-post3  {
     background-color: #2F3644;
     padding: 30px 70px;
     border-radius: 15px;
 }
 
-.card-post h1{
+#card-post1, #card-post2, #card-post3, .titlePost{
     font-family: Heebo;
     font-weight: 400;
     text-align: center;
@@ -60,6 +76,7 @@ input, textarea {
 
 input {
     height: 45px;
+    width: max-content;
 }
 
 textarea {
@@ -67,7 +84,7 @@ textarea {
     resize: none;
 
     padding-top: 10px;
-}
+} 
 
 .btn-post{
     margin-top: 30px;
@@ -93,4 +110,90 @@ textarea {
 
 .error-message {
     color: rgb(240, 47, 47);
+}
+
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 100%;
+    overflow:hidden ;
+}
+
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+
+}
+
+.inputChato{
+    display: none;
+
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 40px;
+    width: 20%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manual-btn:hover{
+    background-color: #FFF;
+
+}
+#card-post1:checked ~ .first{
+    margin-left: 0;
+}
+#card-post2:checked ~ .first{
+    margin-left: -25%;
+}
+#card-post3:checked ~ .first{
+    margin-left: -50%;
+}
+/* .navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+} */
+
+.navigation-auto{
+    position:absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#card-post1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #FFF;
+}
+#card-post2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #FFF;
+}
+#card-post3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #FFF;
 }
