@@ -1,19 +1,21 @@
 // import {useState} from 'react'
-import "./PaginaInicial.css";
+import Header from "../../components/Header";
+import "./style.css";
 export default function Produto() {
 
 // const[compra, setCompra] = useState("")
 
   return (
     <div>
-        <header>
-        <h1 id="banner">
-            Brasilianas 
-        </h1>
-        </header>
+      
+        
+        
+            <Header/>
+         
+        
 
         <div className='produto'>
-            <img src="./src/img/geladeira2.png" alt="gela2" />
+            <img src="../../src/assets/geladeira2.png" alt="gela2" />
         <div >
         <h1>Geladeira Branca</h1>
         
