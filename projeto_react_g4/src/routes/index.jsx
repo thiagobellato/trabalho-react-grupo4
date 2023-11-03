@@ -5,6 +5,8 @@ import Contato from '../pages/Contato'
 import Produto from '../pages/Produto'
 import Sobre from '../pages/Sobre'
 import Erro from '../pages/Erro'
+import Posts from '../api/Posts'
+import Calculator from '../pages/Calculadora'
 
 export default function AppRoute() {
   return (
@@ -13,8 +15,10 @@ export default function AppRoute() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/contato' element={<Contato />}></Route>
         <Route path='/sobre' element={<Sobre />}></Route>
+        <Route path='/posts' element={<Posts />}></Route>
         <Route path='*' element={<Erro />}></Route>
-        <Route path='/produto/:id' element={<Produto />}></Route>
+        <Route path='/produto' element={<Produto />}></Route>
+        <Route path='/calc' element={<Calculator/>}></Route>
     </Routes>
 
     </div>
