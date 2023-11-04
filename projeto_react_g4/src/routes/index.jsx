@@ -7,6 +7,8 @@ import Sobre from '../pages/Sobre'
 import Erro from '../pages/Erro'
 import Posts from '../api/Posts'
 import Calculator from '../pages/Calculadora'
+import More from '../pages/More'
+import Update  from '../api/Update'
 
 export default function AppRoute() {
   return (
@@ -17,7 +19,9 @@ export default function AppRoute() {
         <Route path='/sobre' element={<Sobre />}></Route>
         <Route path='/posts' element={<Posts />}></Route>
         <Route path='*' element={<Erro />}></Route>
+        <Route path='/more/:id' element={<More />}></Route>
         <Route path='/produto' element={<Produto />}></Route>
+        <Route path='/update/:id' element={<Update />}></Route>
         <Route path='/calc' element={<Calculator/>}></Route>
     </Routes>
 
