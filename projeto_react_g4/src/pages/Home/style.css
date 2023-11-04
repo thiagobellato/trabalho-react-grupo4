@@ -116,4 +116,11 @@ main header {
       align-items: center;
       justify-content: center;
     }
+   .slider-imagem{
+    width: 93%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
     
