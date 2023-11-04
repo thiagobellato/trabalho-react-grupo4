@@ -4,11 +4,44 @@ import HeaderMain from "../../components/HeaderMain/index.jsx";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/index.jsx";
 
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 export default function Home() {
+  const data = [
+    {id: '1', image:'../../src/img/promo1.jpeg'},
+    {id: '2', image:'../../src/img/promo2.jpeg'},
+    {id: '3', image:'../../src/img/promo3.jpeg'}
+  ]
   return (
     <div>
       <Header />
-      <main>
+      <div>
+      <Swiper
+       modules={[ Pagination, Scrollbar, A11y]}
+   
+       slidesPerView={1}
+       pagination={{ clickable: true }}
+       scrollbar={{ draggable: true }}
+       onSwiper={(swiper) => console.log(swiper)}
+       onSlideChange={() => console.log('slide change')}
+    >
+      {data.map((itens)=>(
+        <SwiperSlide key={itens.id}>
+          <img src={itens.image} alt="Slider" className="slider-imagem" />
+        </SwiperSlide>
+      ))}
+      
+    </Swiper>
+      </div>
+      {/* <main>
         <div className="cards">
           <div className="card">
             <header>
@@ -41,7 +74,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </main> */}
     </div>
   );
 }
