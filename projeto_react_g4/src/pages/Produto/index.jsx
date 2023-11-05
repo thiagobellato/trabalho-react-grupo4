@@ -9,7 +9,7 @@ export default function Produto() {
 
   useEffect(() => {
     axios
-      .get("https://6542e1c401b5e279de1fb01e.mockapi.io/produtos")
+      .get("http://localhost:8080/api/produto/listar")
       .then((response) => {
         setPosts(response.data);
       })
@@ -19,7 +19,7 @@ export default function Produto() {
   }, []);
 
   function deletePost(id) {
-    axios.delete(`https://6542e1c401b5e279de1fb01e.mockapi.io/produtos/${id}`);
+    axios.delete(`http://localhost:8080/api/produto/deletar/${id}`);
     setPosts(posts.filter((post) => post.id !== id));
   }
 
@@ -31,10 +31,14 @@ export default function Produto() {
           {posts.map((post, key) => {
             return (
               <div className="card" key={key}>
-                <header>
-                  <h2>{post.titulo}</h2>
+                <header className="title-prod">
+                  <div className="title-card">
+                  <h1 id="post-title">{post.titulo}</h1>
+                    <img src={`https://loremflickr.com/320/240/${post.titulo}`} alt="era pra ser uma imagem aqui" className="img-card"/>
+                  </div>
                 </header>
                 <div className="line"></div>
+                <p>R${post.valorUnitario}</p>
                 <p>{post.descricao}</p>
                 <div className="btns">
                   <div className="btn-edit">
