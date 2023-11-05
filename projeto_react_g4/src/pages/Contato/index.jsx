@@ -50,15 +50,15 @@ export default function Contato() {
           <h3 className='titulo'>Duvidas frequentes</h3>
           
           <button onClick={onClick} className='botao'>Eu posso devolver produtos com defeito?</button>
-          <p ref={dropDownRef} className={`res ${isActive ? "active" : "inactive"}`} >Não. você comprou por que quis. O golpe ta ai, cai quem quer!</p>
+          <p ref={dropDownRef} className={`res ${isActive ? "active" : "inactive"}`} >Não. Você comprou por que quis. O golpe ta ai, cai quem quer!</p>
           
-          <button onClick={onClick1} className='botao'>Quanto tempo eu tenho para apontar defeitos?</button>
-          <p ref={dropDownRef1} className={`res ${isActive1 ? "active" : "inactive"}`}>Você tem todo o tempo do mundo para apontar defeitos, mas por favor não entre em contato conosco para relatalos. Nos não queremos saber!!!</p>
+          <button onClick={onClick1} className='botao'>Quanto tempo tenho para apontar defeitos?</button>
+          <p ref={dropDownRef1} className={`res ${isActive1 ? "active" : "inactive"}`}>Você tem todo o tempo do mundo para apontar defeitos, mas por favor não entre em contato conosco para relatá-los. Nos não queremos saber!!!</p>
           
           <button onClick={onClick2} className='botao'>Como eu reclamo de produtos defeituosos?</button>
           <p ref={dropDownRef2} className={`res ${isActive2 ? "active" : "inactive"}`}>Reclame com quem você quiser, menos conosco. O mundo já é um lugar muito estressante para ficarmos ouvindo suas reclamações.</p>
           
-          <button onClick={onClick3} className='botao'>Como nós protegemos seu dinheiro?</button>
+          <button onClick={onClick3} className='botao'>Como protegemos seu dinheiro?</button>
           <p ref={dropDownRef3} className={`res ${isActive3 ? "active" : "inactive"}`}>Nós deixamos ele bem seguro dentro do nosso bolso. Deixamos ele tão seguro que você nunca mais vai velo.</p>
         </div>
 
