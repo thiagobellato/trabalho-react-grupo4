@@ -49,7 +49,6 @@ export default function Posts() {
   return (
     <div>
 
-      <Header />
       <main className="main-post">
 
         <div id="card-post2">

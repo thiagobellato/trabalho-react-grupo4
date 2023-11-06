@@ -80,7 +80,6 @@ export default function Update() {
 
   return (
     <div>
-      <Header />
 
       <main>
         <div id="card-post2">

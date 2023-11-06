@@ -1,13 +1,15 @@
 import React from 'react'
-import Header from '../../components/Header'
+import './style.css'
 
 export default function Erro() {
   return (
     <div>
-
       
-
-        <h2>Erro 404. Página não encontrada</h2>
+      <div className="error">
+      <img id='interroga' src="../../src/assets/pontodeinterrogacao.png" alt="" />
+      <br />
+        <p id='error-title'>Erro 404. Página não encontrada</p>
+        </div>
     </div>
   )
 }

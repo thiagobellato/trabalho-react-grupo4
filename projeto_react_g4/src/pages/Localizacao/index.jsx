@@ -27,7 +27,7 @@ export default function Localizacao() {
   
   return (
     <div>
-      <Header />
+   
       <main style={{ flexDirection: 'column', padding: '100px' }}>
         <div>
           <label>Informe um CEP válido</label>

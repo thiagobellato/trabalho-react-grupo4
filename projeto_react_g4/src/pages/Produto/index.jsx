@@ -34,7 +34,7 @@ export default function Produto() {
     <div>
 
 
-      <Header />
+
       <main className="main-card">
 
 

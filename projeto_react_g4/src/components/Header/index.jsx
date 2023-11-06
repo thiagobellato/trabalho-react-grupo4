@@ -9,10 +9,11 @@ export default function Header() {
       {/* <h2>Empresa ABC</h2> */}
       <div className="menu">
 
+        <Player1/>
 
         <div id="tituloHeader">
 
-          <img src="../../../src/assets/Brasilianas.svg" alt="logo" />
+          <img className="img-logo" src="../../../src/assets/Brasilianas.svg" alt="logo" />
         </div>
         <nav>
           <ul>

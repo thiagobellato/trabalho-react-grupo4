@@ -8,12 +8,12 @@ main header {
     max-width: 500px;
 }
 
-img {
+/* img {
     width: 20px;
     margin-left: 40px;
 
     cursor: pointer;
-}
+} */
 
 .modal {
     width: 80px;
