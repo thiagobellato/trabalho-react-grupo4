@@ -1,7 +1,6 @@
 // import React from 'react'
-import { useRef, useState } from "react";
-// import Header from "../../components/Header";
-import "./style.css";
+import { useRef, useState } from 'react'
+import './style.css'
 import emailjs from "@emailjs/browser";
 
 export default function Contato() {

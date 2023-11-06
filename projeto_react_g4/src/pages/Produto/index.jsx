@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import Header from "../../components/Header";
 import "./style.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import StarRating from "../../components/StarRating";
+ import { Link } from "react-router-dom";
+ import StarRating from "../../components/StarRating";
 export default function Produto() {
   const [posts, setPosts] = useState([]);
 
@@ -26,13 +25,8 @@ export default function Produto() {
 
   return (
     <div>
-{/* <<<<<<< HEAD */}
       
-      {/* // <main> */}
-{/* // ======= */}
-      {/* <Header /> */}
-      <main className="main-card">
-{/* >>>>>>> edfb4d94f96db36eb1cc23f01661dd74cdb2b8a2 */}
+      <main>
         <div className="cards">
           {posts.map((post, key) => {
             return (
@@ -62,7 +56,8 @@ export default function Produto() {
                     </Link>
                   </div>
                   <div className="btn-delete">
-                    <button onClick={() => deletePost(post.id)}>Apagar</button>
+                    <button  onClick={() => deletePost(post.id) } >Apagar</button>
+                    
                   </div>
                 </div>
               </div>

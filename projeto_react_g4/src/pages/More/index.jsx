@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './style.css'
-import Header from '../../components/Header'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 

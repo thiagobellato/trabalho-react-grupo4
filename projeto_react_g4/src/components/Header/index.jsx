@@ -8,35 +8,11 @@ export default function Header() {
     <header>
       {/* <h2>Empresa ABC</h2> */}
       <div className="menu">
-<<<<<<< HEAD
-        
-        <Player1/>
-            <div id="tituloHeader">
-              
-              <img src="../../../src/assets/Brasilianas.svg" alt="logo" className="img-logo" />
-                </div>
-            <nav>
-              <ul>
-                
-                <li>
-                  <Link to={'/'}><button className="button">Home</button></Link></li>
-                  
-                <li> 
-            <Link to={'/empresa'}><button className="button">Empresa</button></Link>
-                </li>
-                <li>
-            <Link to={'/produto'}><button className="button">Produtos</button></Link>
-                </li>
-                <li>
-            <Link to={'/sobre'}><button className="button"> Sobre</button></Link>
-                </li>
-                <li>
-            <Link to={'/contato'}><button className="button">Contato</button></Link>
-=======
 
+        <Player1 />
         <div id="tituloHeader">
 
-          <img src="../../../src/assets/Brasilianas.svg" alt="logo" />
+          <img src="../../../src/assets/Brasilianas.svg" alt="logo" className="img-logo" />
         </div>
         <nav>
           <ul>
@@ -46,7 +22,6 @@ export default function Header() {
 
             <li>
               <Link to={'/empresa'}><button className="button">Empresa</button></Link>
->>>>>>> main
             </li>
             <li>
               <Link to={'/produto'}><button className="button">Produtos</button></Link>
@@ -67,11 +42,8 @@ export default function Header() {
 
           </ul>
 
-              </ul>
-
-
-        </nav>
-      </div>
-    </header>
+      </nav>
+    </div>
+    </header >
   );
 }

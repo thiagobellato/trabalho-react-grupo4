@@ -72,7 +72,6 @@ export default function Update() {
 
   return (
     <div>
-      <Header />
       <main>
         <div id="card-post2">
           {/* <div id="ee"> */}
@@ -138,11 +137,11 @@ export default function Update() {
                   {...register("valorUnitario")}
                 />
                 <p className="error-message">{errors.valorUnitario?.message}</p>
-              </div> */}
+              </div>
 
               <div className="btn-post">
                 <button>Enviar</button>
-              </div>
+              </div> */}
             </form>
           </div>
         </div>

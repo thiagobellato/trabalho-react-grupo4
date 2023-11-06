@@ -1,8 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./style.css";
-import Header from "../../components/Header";
-import ExibirLocalizacao from "./ExibirLocalizacao";
+import ExibirLocalizacao from "../../components/ExibirLocalizacao";
+
+
 
 export default function Localizacao() {
 
@@ -33,7 +34,6 @@ export default function Localizacao() {
 
   return (
     <div>
-      <Header/>
       <main style={{ flexDirection: 'column', padding: '100px' }}>
         <div>
           <label>Informe um CEP válido</label>
@@ -43,8 +43,8 @@ export default function Localizacao() {
         <div>
           <button onClick={pegarEndereço}>Pegar Endereço</button>
         </div>
-        <div style={{ marginTop: '50px' }}>
-          <ExibirLocalizacao  />
+          <ExibirLocalizacao parametro={addressData}/>
+        <div>
         </div>
       </main>
     </div>
