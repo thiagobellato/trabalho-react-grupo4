@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./style.css";
+import Header from "../../components/Header";
 
 export default function Calculator() {
   const [num1, setNum1] = useState(0);
@@ -53,7 +54,7 @@ export default function Calculator() {
 
   return (
     <div className="all">
-    
+      <Header/>
 
 
       <div className="calculadora">
