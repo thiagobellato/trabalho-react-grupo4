@@ -9,6 +9,7 @@ import Posts from '../api/Posts'
 import Calculator from '../pages/Calculadora'
 import More from '../pages/More'
 import Update  from '../api/Update'
+import Localizacao from '../pages/Localizacao'
 
 export default function AppRoute() {
   return (
@@ -23,6 +24,7 @@ export default function AppRoute() {
         <Route path='/produto' element={<Produto />}></Route>
         <Route path='/update/:id' element={<Update />}></Route>
         <Route path='/calc' element={<Calculator/>}></Route>
+        <Route path='/localizacao' element={<Localizacao/>}></Route>
     </Routes>
 
     </div>
