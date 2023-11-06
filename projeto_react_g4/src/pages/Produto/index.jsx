@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import "./style.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import StarRating from "../../components/StarRating";
 export default function Produto() {
   const [posts, setPosts] = useState([]);
 
@@ -26,20 +27,24 @@ export default function Produto() {
   return (
     <div>
       <Header />
-      <main>
+      <main className="main-card">
         <div className="cards">
           {posts.map((post, key) => {
             return (
               <div className="card" key={key}>
                 <header className="title-prod">
                   <div className="title-card">
-                  <h1 id="post-title">{post.titulo}</h1>
-                    <img src={`https://loremflickr.com/320/240/${post.titulo}`} alt="era pra ser uma imagem aqui" className="img-card"/>
+                  <h1 id="post-title">{post.nome}</h1>
+                    <img src={`https://loremflickr.com/320/240/${post.nome}`} alt="era pra ser uma imagem aqui" className="img-card"/>
                   </div>
                 </header>
                 <div className="line"></div>
-                <p>R${post.valorUnitario}</p>
-                <p>{post.descricao}</p>
+                <p className="pzao">R${post.valorUnitario}</p>
+                <hr />
+                <br />
+                <p className="pzao">Descrição: {post.descricao}</p>
+                <br />
+                <StarRating/>
                 <div className="btns">
                   <div className="btn-edit">
                     <Link to={`/update/${post.id}`}>
