@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import Header from "../../components/Header";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import "./style.css";
@@ -6,16 +7,26 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const validationPost = yup.object().shape({
-  nome: yup.string().required("Preencha o título").max(40, "Até 40 caract."),
+  titulo: yup.string().required("Preencha o título").max(40, "Até 40 caract."),
   descricao: yup
     .string()
     .required("Preencha a descrição")
     .max(100, "Até 100 caract."),
-  dataFabricacao: yup.date().required("Preencha uma data válida"),
-  qntdEstoque: yup.number()
+//   conteudo: yup
+//     .string()
+//     .required("Preencha o conteúdo")
+//     .max(300, "Até 300 caract."),
+// });
+  dataFabricacao: yup
+  .string()
+  .required("Preencha uma data válida")
+  .max(99999, "Até 300 caract."),
+  qntdEstoque: yup
+  .number()
   .required("Preencha uma quantidade válida")
   .max(300, "Até 300 caract."),
-  valorUnitario: yup.number()
+  valorUnitario: yup
+  .number()
   .required("Preencha um valor válido")
   .max(300, "Até 300 caract."),
 });
@@ -31,18 +42,19 @@ export default function Posts() {
 
   const addPost = (data) =>
     axios
-      .post("http://localhost:8080/api/produto/salvar", data)
+      .post("https://6542e1c401b5e279de1fb01e.mockapi.io/produtos", data)
       .then(() => {
         console.log("deu certo");
-        navigate("/produto");
+        navigate("/");
       })
       .catch(() => {
         console.log("deu errado !");
-        console.log(data);
       });
+
   return (
     <div>
-      <main className="main-post">
+      {/* <Header /> */}
+      <main>
         <div id="card-post2">
           {/* <div id="ee"> */}
             <h1 className="titlePost">Criar produto</h1>
@@ -51,14 +63,14 @@ export default function Posts() {
           <div className="card-body-post">
             <form action="#" onSubmit={handleSubmit(addPost)}>
               <div className="fields">
-                <label htmlFor="nome">Nome</label>
+                <label htmlFor="titulo">Titulo</label>
                 <input
                   type="text"
-                  id="nome"
-                  name="nome"
-                  {...register("nome")}
+                  id="titulo"
+                  name="titulo"
+                  {...register("titulo")}
                 />
-                <p className="error-message">{errors.nome?.message}</p>
+                <p className="error-message">{errors.titulo?.message}</p>
               </div>
 
               <div className="fields">
@@ -77,7 +89,7 @@ export default function Posts() {
               <div className="fields">
                 <label htmlFor="dataFabricacao">Data de Fabricação</label>
                 <input
-                  type="date"
+                  type="text"
                   id="dataFabricacao"
                   name="dataFabricacao"
                   {...register("dataFabricacao")}

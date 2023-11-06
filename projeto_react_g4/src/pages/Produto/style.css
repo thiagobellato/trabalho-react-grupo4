@@ -1,76 +1,22 @@
-.title-prod{
-    width: max-content;
+ul, li{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center ;
+    gap: 40px;
 }
-/* .title-prod h1{
-    display: flex;
+ul{
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+}
+nav ul {
     width: 100%;
-} */
- 
-.card{
-    /* margin: 0 0 0 0 auto;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    /* flex-direction: row; */
-    gap: 100px;
-    width: 70%;
-    height: 70%; 
-
-}
-.title-card .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.post-title{
-    color: black;
-    background-color: #FFDE59;
-}
-
-.title-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    width: max-content;
-    height: max-content;
-    /* padding: 15px; */
-}
-.img-card{
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: max-content;
-    height: max-content;
-}
-
-.cards{
-    display: grid;
-    grid-template-rows: 8% 8% 8% 8%;
-    grid-template-columns: 50% 50% ;
-    gap: 1px;
-    justify-content: space-between;
-}
-
-/* .main-card{
-    display: grid;
-    gap: 100px;
-} */
-
-.pzao{
-
-    color: black;
-    background-color: #FFDE59;
-    width: fit-content;
-    font-weight: 800;
+    height: 100%;
     
 }
+/* header{
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} */
