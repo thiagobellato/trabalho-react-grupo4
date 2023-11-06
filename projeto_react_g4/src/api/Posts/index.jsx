@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import Header from "../../components/Header";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import "./style.css";
@@ -39,11 +38,10 @@ export default function Posts() {
       })
       .catch(() => {
         console.log("deu errado !");
+        console.log(data);
       });
-
   return (
     <div>
-      <Header />
       <main className="main-post">
         <div id="card-post2">
           {/* <div id="ee"> */}
