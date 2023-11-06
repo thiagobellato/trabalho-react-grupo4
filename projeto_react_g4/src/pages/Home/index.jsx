@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import HeaderMain from "../../components/HeaderMain/index.jsx";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/index.jsx";
 
@@ -22,7 +21,7 @@ export default function Home() {
   ]
   return (
     <div>
-      <Header />
+      
       <div>
       <Swiper
        modules={[ Pagination, Scrollbar, A11y]}

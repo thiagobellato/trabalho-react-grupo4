@@ -112,3 +112,10 @@
     height: 150px;
     border: black 2px solid;
 }
+
+#submit{
+    background-color: #add6bc;
+    justify-content: center;
+    margin-right: 6%;
+    font-size: larger;
+}

@@ -25,7 +25,7 @@ export default function Produto() {
 
   return (
     <div>
-      <Header />
+      
       <main>
         <div className="cards">
           {posts.map((post, key) => {

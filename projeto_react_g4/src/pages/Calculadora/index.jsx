@@ -54,7 +54,7 @@ export default function Calculator() {
 
   return (
     <div className="all">
-      <Header/>
+    
 
 
       <div className="calculadora">

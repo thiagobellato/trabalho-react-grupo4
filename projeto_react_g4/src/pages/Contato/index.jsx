@@ -27,7 +27,7 @@ export default function Contato() {
 
   return (
     <div>
-      <Header />
+      
       <div className='contato'>
         <h1 className='titulo'>Contatos</h1>
       </div>
@@ -41,7 +41,7 @@ export default function Contato() {
           <input id='emailCaixa' type="email" placeholder="Email" />
           <label id='mensagem'>Mensagem:</label>
           <textarea id='mensagemCaixa' placeholder="Digite sua mensagem"></textarea>
-          <button type="submit">Enviar</button>
+          <button id='submit' type="submit">Enviar</button>
         </form>
       </div>
       <div className='contatos'>

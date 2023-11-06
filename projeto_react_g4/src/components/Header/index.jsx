@@ -1,12 +1,15 @@
 import React from "react";
 import {Link} from "react-router-dom"
 import './style.css'
+import Player1 from "../Player";
 
 export default function Header() {
   return (
     <header>
       {/* <h2>Empresa ABC</h2> */}
       <div className="menu">
+        
+        <Player1/>
             <div id="tituloHeader">
               
               <img src="../../../src/assets/Brasilianas.svg" alt="logo" className="img-logo" />
