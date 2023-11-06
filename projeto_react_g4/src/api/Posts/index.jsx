@@ -44,7 +44,7 @@ export default function Posts() {
   return (
     <div>
       <Header />
-      <main>
+      <main className="main-post">
         <div id="card-post2">
           {/* <div id="ee"> */}
             <h1 className="titlePost">Criar produto</h1>
