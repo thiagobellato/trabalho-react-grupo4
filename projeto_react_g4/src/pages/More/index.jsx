@@ -23,7 +23,8 @@ export default function More() {
 
   return (
     <div>
-      
+
+
       <main>
         <div className="cards">
           <div className="card">

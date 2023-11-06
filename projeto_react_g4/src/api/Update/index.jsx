@@ -8,11 +8,14 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 const validationPost = yup.object().shape({
+
   nome: yup.string().required("Preencha o título").max(40, "Até 40 caract."),
+
   descricao: yup
     .string()
     .required("Preencha a descrição")
     .max(100, "Até 100 caract."),
+
   dataFabricacao: yup.date().required("Preencha uma data válida"),
   qntdEstoque: yup.number()
   .required("Preencha uma quantidade válida")
@@ -43,6 +46,7 @@ export default function Update() {
     handleSubmit,
     formState: { errors }, reset
   } = useForm({ resolver: yupResolver(validationPost) });
+
   // const {
   //   register,
   //   handleSubmit,
@@ -50,7 +54,9 @@ export default function Update() {
   // } = useForm({ resolver: yupResolver(validationPost) });
 
   useEffect(()=>{
+
     axios.get(`http://localhost:8080/api/produto/${id}`)
+
     .then(response=> {
       reset(response.data);
     }).catch(()=>{
@@ -59,12 +65,14 @@ export default function Update() {
 },[]);
 
 
+
   const addPost = (data) =>
     axios
       .put(`http://localhost:8080/api/produto/atualizar/${id}`, data)
       .then(() => {
         console.log("deu certo");
         navigate("/produto");
+
       })
       .catch(() => {
         console.log("deu errado !");
@@ -73,6 +81,7 @@ export default function Update() {
   return (
     <div>
       <Header />
+
       <main>
         <div id="card-post2">
           {/* <div id="ee"> */}
@@ -148,6 +157,7 @@ export default function Update() {
         </div>
       </main>
       {/* </div> */}
+
     </div>
   );
 }

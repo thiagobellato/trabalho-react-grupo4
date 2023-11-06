@@ -54,7 +54,9 @@ export default function Calculator() {
 
   return (
     <div className="all">
+
     
+
 
 
       <div className="calculadora">

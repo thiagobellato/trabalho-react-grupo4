@@ -4,13 +4,17 @@ import Header from "../../components/Header";
 import "./style.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
 import StarRating from "../../components/StarRating";
+
 export default function Produto() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     axios
+
       .get("http://localhost:8080/api/produto/listar")
+
       .then((response) => {
         setPosts(response.data);
       })
@@ -20,23 +24,25 @@ export default function Produto() {
   }, []);
 
   function deletePost(id) {
+
     axios.delete(`http://localhost:8080/api/produto/deletar/${id}`);
+
     setPosts(posts.filter((post) => post.id !== id));
   }
 
   return (
     <div>
-<<<<<<< HEAD
-      
-      <main>
-=======
+
+
       <Header />
       <main className="main-card">
->>>>>>> edfb4d94f96db36eb1cc23f01661dd74cdb2b8a2
+
+
         <div className="cards">
           {posts.map((post, key) => {
             return (
               <div className="card" key={key}>
+
                 <header className="title-prod">
                   <div className="title-card">
                   <h1 id="post-title">{post.nome}</h1>
@@ -50,6 +56,7 @@ export default function Produto() {
                 <p className="pzao">Descrição: {post.descricao}</p>
                 <br />
                 <StarRating/>
+
                 <div className="btns">
                   <div className="btn-edit">
                     <Link to={`/update/${post.id}`}>

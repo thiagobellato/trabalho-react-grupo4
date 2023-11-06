@@ -111,6 +111,7 @@
     width: 85%;
     height: 150px;
     border: black 2px solid;
+
 }
 
 #submit{
@@ -118,4 +119,5 @@
     justify-content: center;
     margin-right: 6%;
     font-size: larger;
+
 }

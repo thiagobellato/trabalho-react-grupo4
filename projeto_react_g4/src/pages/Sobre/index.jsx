@@ -5,7 +5,9 @@ import './style.css'
 export default function Sobre() {
   return (
     <div>
+
       
+
 
       <div className='contato'>
         <h1 className='titulo'>Sobre a Empresa</h1>
