@@ -9,8 +9,7 @@ main header {
     }
     
     img {
-    width: 20px;
-    margin-left: 40px;
+   width: 1000px;
     
     cursor: pointer;
     }
@@ -22,11 +21,11 @@ main header {
     }
     
     main .cards{
-      display: flex;
+      /* display: flex;
       justify-content: center;
       flex-direction: column;
     
-      margin-top: 1rem;
+      margin-top: 1rem; */
     }
     
     main .cards .card {
@@ -117,10 +116,16 @@ main header {
       justify-content: center;
     }
    .slider-imagem{
-    width: 93%;
-    height: 550px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 120%;
+    height: 500px;
+    padding-right: 204px ;
+   }
+
+   .carousel{
+   
+    margin-top: 2%;
+    margin-left: 20%;
+    width: 60%;
+    height: 510px;
    }
     
