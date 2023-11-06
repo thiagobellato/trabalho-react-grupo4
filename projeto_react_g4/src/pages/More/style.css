@@ -8,12 +8,12 @@ main header {
     max-width: 500px;
 }
 
-img {
+/* img {
     width: 20px;
     margin-left: 40px;
 
     cursor: pointer;
-}
+} */
 
 .modal {
     width: 80px;
@@ -22,11 +22,13 @@ img {
 }
 
 main .cards {
-    display: flex;
+
+    /* display: flex;
     justify-content: center;
     flex-direction: column;
 
-    margin-top: 1rem;
+    margin-top: 1rem; */
+
 }
 
 main .cards .card {
