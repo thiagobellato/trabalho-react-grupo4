@@ -1,3 +1,121 @@
-h1{
-    color: red;
+.contato{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    background-color:#add6bc;
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+    border-radius: 20px;
+    border: 2px black solid;
+}
+.contatos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.botao{
+    background-color: #add6bc ;
+    color: green;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textoFale{
+    font-weight: bold;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.res.active{
+    opacity: 1;
+    visibility: visible;
+    font-size: medium;
+}
+
+.res{
+    opacity: 0;
+    font-size: 0%;
+}
+
+#duvidas{
+    border: black 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #add6bc;
+    width: 30%;
+    height: auto;
+    color: green;
+    padding-bottom: 20px;
+}
+
+#fale{
+    border: black 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #add6bc;
+    width: 30%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: green;
+   padding-bottom: 40px;
+}
+
+#sugestoes{
+    margin-top: 3%;
+    margin-left: 35%;
+    border: black 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #add6bc;
+    width: 30%;
+    height: auto;
+    color: green;
+    padding-bottom: 20px;
+}
+#nome{
+    margin-top: 10px;
+    color: green;
+}
+
+#nomeCaixa{
+    flex-wrap: wrap-reverse;
+    margin-top: 5px;
+    border: black 2px solid;
+}
+
+#email{
+    margin-top: 10px;
+    color: green;
+}
+
+#emailCaixa{
+    flex-wrap: wrap-reverse;
+    margin-top: 5px;
+    border: black 2px solid; 
+}
+
+#mensagem{
+    color: green;
+    margin-top: 10px;
+}
+
+#mensagemCaixa{
+    margin-top: 5px;
+    width: 85%;
+    height: 150px;
+    border: black 2px solid;
+}
+
+#submit{
+    background-color: #add6bc;
+    justify-content: center;
+    margin-right: 6%;
+    font-size: larger;
 }
