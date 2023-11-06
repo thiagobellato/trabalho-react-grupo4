@@ -26,13 +26,13 @@ export default function Produto() {
 
   return (
     <div>
-<<<<<<< HEAD
+{/* <<<<<<< HEAD */}
       
-      <main>
-=======
-      <Header />
+      {/* // <main> */}
+{/* // ======= */}
+      {/* <Header /> */}
       <main className="main-card">
->>>>>>> edfb4d94f96db36eb1cc23f01661dd74cdb2b8a2
+{/* >>>>>>> edfb4d94f96db36eb1cc23f01661dd74cdb2b8a2 */}
         <div className="cards">
           {posts.map((post, key) => {
             return (

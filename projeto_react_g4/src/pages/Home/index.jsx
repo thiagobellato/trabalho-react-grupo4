@@ -17,6 +17,8 @@ export default function Home() {
   const data = [
     {id: '1', image:'../../src/assets/promo1.jpeg'},
     {id: '2', image:'../../src/assets/promo2.jpeg'},
+    {id: '2', image:'../../src/assets/banner-1.png'},
+    {id: '2', image:'https://loremflickr.com/1963/560'},
     {id: '3', image:'../../src/assets/promo3.jpeg'}
   ]
   return (
