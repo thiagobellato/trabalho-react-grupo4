@@ -1,0 +1,15 @@
+input[type=radio]{
+    display: none;
+}
+.star{
+    cursor: pointer;
+}
+.strela{
+    display: flex;
+    flex-direction: row;
+
+}
+.oi{
+    display: flex;
+    flex-direction: row;
+}
