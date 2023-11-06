@@ -24,16 +24,10 @@ export default function Localizacao() {
       console.error('Erro ao buscar o CEP:', error);
     }
   };
-
-  useEffect(() => {
-    pegarEndereço();
-  }, []);
-
-  console.log(addressData);
-
+  
   return (
     <div>
-      <Header/>
+      <Header />
       <main style={{ flexDirection: 'column', padding: '100px' }}>
         <div>
           <label>Informe um CEP válido</label>
@@ -44,7 +38,7 @@ export default function Localizacao() {
           <button onClick={pegarEndereço}>Pegar Endereço</button>
         </div>
         <div style={{ marginTop: '50px' }}>
-          <ExibirLocalizacao  />
+          <ExibirLocalizacao data={addressData} />
         </div>
       </main>
     </div>
