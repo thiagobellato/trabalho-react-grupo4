@@ -11,6 +11,7 @@ import More from '../pages/More'
 import Update  from '../api/Update'
 import Localizacao from '../pages/Localizacao'
 
+
 export default function AppRoute() {
   return (
     <div>
@@ -26,7 +27,6 @@ export default function AppRoute() {
         <Route path='/calc' element={<Calculator/>}></Route>
         <Route path='/localizacao' element={<Localizacao/>}></Route>
     </Routes>
-
     </div>
   )
 }
