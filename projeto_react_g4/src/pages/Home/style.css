@@ -63,7 +63,7 @@ main header {
       height: 2px;
     }
     
-    p {
+    /* p {
       margin-top: 20px;
       font-size: 1.2rem;
       
@@ -73,7 +73,7 @@ main header {
       font-weight: 500;
     
       color: #B3BACF;
-    }
+    } */
     
     .btns {
       display: flex;

@@ -16,9 +16,9 @@ import 'swiper/css/scrollbar';
 
 export default function Home() {
   const data = [
-    {id: '1', image:'../../src/img/promo1.jpeg'},
-    {id: '2', image:'../../src/img/promo2.jpeg'},
-    {id: '3', image:'../../src/img/promo3.jpeg'}
+    {id: '1', image:'../../src/assets/promo1.jpeg'},
+    {id: '2', image:'../../src/assets/promo2.jpeg'},
+    {id: '3', image:'../../src/assets/promo3.jpeg'}
   ]
   return (
     <div>
