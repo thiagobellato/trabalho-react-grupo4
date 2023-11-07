@@ -4,9 +4,12 @@
 	🚧 Trabalho em Grupo Desenvolvimento Web (REACT) 
 </h4>
 
-## Descrição do Projeto
+## Projetos Individuais
 
-<p>
+-Paulo: Calculadora simples e envio de email de contato <br/>
+-Thiago: Consumo do ViaCep <br/>
+-Ramon: Carrossel na página inicial <br/> 
+-Yslânio: Lista de desejos
 
 
 
