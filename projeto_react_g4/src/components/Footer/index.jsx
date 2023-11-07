@@ -4,8 +4,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaGit, FaGithub } from 'react-icon
 
 export default function Footer() {
   return (
-    <div id='footer'>
-      <footer>
+    
+      <footer id='footer'>
         <ul className='list'>
           <li>
             <FaFacebook />
@@ -20,8 +20,7 @@ export default function Footer() {
             <FaGithub />
           </li>
         </ul>
-        <p>Costs &copy; 2023</p>
+        <p>Brasilianas' &copy; copyright 2023. Todos os direitos reservados.</p>
       </footer>
-    </div>
   )
 }

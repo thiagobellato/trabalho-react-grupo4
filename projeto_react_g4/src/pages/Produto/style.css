@@ -1,4 +1,3 @@
-
 .title-prod{
     width: max-content;
     display: flex;
@@ -30,9 +29,10 @@
     width: 100%;
 }
 
-.post-title{
+#post-title{
     color: black;
     background-color: #FFDE59;
+    width: 320px;
 }
 
 .title-card{
@@ -40,8 +40,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
-    width: max-content;
+    background-color: #2F3644;
+    /* gap: 10px; */
+    width: 32rem;
     height: max-content;
     /* padding: 15px; */
 }
@@ -56,7 +57,7 @@
 
 .cards{
     display: grid;
-    grid-template-rows: 8% 8% 8% 8%;
+    grid-template-rows: 1000px 1000px 1000px 1000px ;
     grid-template-columns: 50% 50% ;
     gap: 1px;
     justify-content: space-between;
@@ -69,10 +70,19 @@
 
 .pzao{
 
-    color: black;
-    background-color: #FFDE59;
+    color: yellow;
     width: fit-content;
     font-weight: 800;
     
 }
 
+.textos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 32rem;
+    height: max-content;
+    /* padding: 15px; */
+}

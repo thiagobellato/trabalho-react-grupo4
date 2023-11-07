@@ -120,10 +120,11 @@ main header {
     }
    .slider-imagem{
     margin-top: 40px;
-    width: 100%;
+    width: 105em;
     height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
    }
     

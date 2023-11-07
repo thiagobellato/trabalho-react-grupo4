@@ -16,22 +16,22 @@ const validationPost = yup.object().shape({
 
   dataFabricacao: yup.date().required("Preencha uma data válida"),
   qntdEstoque: yup.number()
-  .required("Preencha uma quantidade válida")
-  .max(300, "Até 300 caract."),
+    .required("Preencha uma quantidade válida")
+    .max(300, "Até 300 caract."),
   valorUnitario: yup.number()
 
-  .required("Preencha um valor válido")
-  .max(300, "Até 300 caract."),
+    .required("Preencha um valor válido")
+    .max(300, "Até 300 caract."),
 });
 
 export default function Posts() {
   let navigate = useNavigate();
-  
+
 
   const {
     register,
     handleSubmit,
-    formState: { errors }} = useForm({ resolver: yupResolver(validationPost) });
+    formState: { errors } } = useForm({ resolver: yupResolver(validationPost) });
 
   const addPost = (data) =>
     axios
@@ -53,8 +53,8 @@ export default function Posts() {
 
         <div id="card-post2">
           {/* <div id="ee"> */}
-            <h1 className="titlePost">Criar produto</h1>
-          
+          <h1 className="titlePost">Criar produto</h1>
+
           <hr />
           <div className="card-body-post">
             <form action="#" onSubmit={handleSubmit(addPost)}>
@@ -82,7 +82,7 @@ export default function Posts() {
                 <p className="error-message">{errors.descricao?.message}</p>
               </div>
 
-              
+
 
               <div className="fields">
                 <label htmlFor="dataFabricacao">Data de Fabricação</label>

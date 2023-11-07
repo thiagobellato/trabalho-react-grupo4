@@ -6,7 +6,7 @@ export default function Player1() {
     
     <div>
    <audio className='radio' controls>
-  <source src="https://manager8.streamradio.fr:3235/stream" type="audio/mpeg" />
+  <source src="https://24283.live.streamtheworld.com/JP_SP_FMAAC.aac?1699337124541" type="audio/mpeg" />
 </audio>
     </div>
 
