@@ -6,7 +6,10 @@
 
 ## Descrição do Projeto
 
-<p>
+-Paulo: calculadora e envio de email de sugestão
+-Ramon: rádio e carrossel
+-Thiago: consumo de ViaCep
+-Yslânio: lista de desejo
 
 
 
