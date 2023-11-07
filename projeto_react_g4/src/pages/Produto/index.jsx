@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import Header from "../../components/Header";
 import "./style.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -32,9 +31,6 @@ export default function Produto() {
 
   return (
     <div>
-
-
-
       <main className="main-card">
 
 
@@ -49,13 +45,15 @@ export default function Produto() {
                     <img src={`https://loremflickr.com/320/240/${post.nome}`} alt="era pra ser uma imagem aqui" className="img-card"/>
                   </div>
                 </header>
-                <div className="line"></div>
+                <div className="textos">
+
                 <p className="pzao">R${post.valorUnitario}</p>
-                <hr />
+                {/* <hr />; */}
                 <br />
                 <p className="pzao">Descrição: {post.descricao}</p>
-                <br />
                 <StarRating/>
+                </div>
+                <br />
 
                 <div className="btns">
                   <div className="btn-edit">

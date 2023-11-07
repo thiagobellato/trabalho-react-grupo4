@@ -1,0 +1,16 @@
+#footer{
+    background-color: #FFDE59;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.list li{
+    margin-left: 0.6em;
+    size: 200px;
+}
+
+.list li:hover{
+    color: green;
+}

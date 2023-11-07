@@ -1,12 +1,7 @@
 import React from "react";
 import "./style.css";
 
-
-import { Link } from "react-router-dom";
-import Header from "../../components/Header/index.jsx";
-
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
+import { Pagination, Scrollbar, A11y, Autoplay,EffectCube } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -14,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/effect-cube';
 
 export default function Home() {
   const data = [
@@ -28,11 +24,21 @@ export default function Home() {
 
       <div>
       <Swiper
-       modules={[ Pagination, Scrollbar, A11y]}
-   
+       modules={[EffectCube, Pagination, Scrollbar, A11y, Autoplay]}
+        autoplay={{
+          delay : 3000,
+          disableOnInteraction : false,
+        }}
+        effect={'cube'}
+        grabCursor={true}
+        cubeEffect={{
+          shadow:true,
+          slideShadows:true,
+          shadowOffset:20,
+          shadowScale:0.94,
+        }}
        slidesPerView={1}
        pagination={{ clickable: true }}
-       scrollbar={{ draggable: true }}
        onSwiper={(swiper) => console.log(swiper)}
        onSlideChange={() => console.log('slide change')}
     >

@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import './styles/global.css'
 
 import Header from './components/Header/index.jsx'
+import Footer from './components/Footer/index.jsx'
 
 
 function App() {
@@ -10,13 +11,15 @@ function App() {
 
   return (
 
-    <div>
-
-      <BrowserRouter>
+    <BrowserRouter>
+    <div className='container'>
+      <div className='page'>
       <Header/>
       <AppRouter/>
-      </BrowserRouter>
+      </div>
+      <Footer/>
    </div>   
+      </BrowserRouter>
   )
 }
 
