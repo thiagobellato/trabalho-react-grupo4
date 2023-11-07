@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-cube';
+import Player1 from "../../components/Player";
 
 export default function Home() {
   const data = [
@@ -44,46 +45,14 @@ export default function Home() {
         >
           {data.map((itens) => (
             <SwiperSlide key={itens.id}>
+              <div className="dono">
               <img src={itens.image} alt="Slider" className="slider-imagem" />
+              </div>
             </SwiperSlide>
           ))}
 
         </Swiper>
       </div>
-      {/* <main>
-        <div className="cards">
-          <div className="card">
-            <header>
-              <h2>Consumindo API</h2>
-            </header>
-            <div className="line"></div>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan
-              disputationi eu sit. Vide electram sadipscing et per. Per aumento
-              de cachacis, eu reclamis. Paisis, filhis, espiritis santis.
-              Cevadis im ampola pa arma uma pindureta.
-            </p>
-            <div className="btns">
-              <div className="btn-edit">
-                <Link to = '/contato'>
-                  <button>Contato</button>
-                </Link>
-              </div>
-              <div className="btn-more">
-                <Link to ='/sobre'>
-                  <button>Ler Mais</button>
-                </Link>
-              </div>
-              
-              <div className="btn-delete">
-              <Link to ='/produto'>
-                  <button>Produto</button>
-                  </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main> */}
     </div>
   );
 }

@@ -57,7 +57,7 @@ export default function Posts() {
 
           <hr />
           <div className="card-body-post">
-            <form action="#" onSubmit={handleSubmit(addPost)}>
+            <form id="form-post" action="#" onSubmit={handleSubmit(addPost)}>
               <div className="fields">
 
                 <label htmlFor="nome">Nome</label>
@@ -122,7 +122,7 @@ export default function Posts() {
               </div>
 
               <div className="btn-post">
-                <button>Enviar</button>
+                <button id="btn-enviar">Enviar</button>
               </div>
             </form>
           </div>

@@ -10,16 +10,20 @@
     height: auto;
     margin-left: 30%;
     border-radius: 20px;
-    border: 2px black solid;
+    border: 4px black solid;
+    
   
 }
 .titulo{
     color: green;
     margin-top: 10px;
     margin-bottom: 20px;
+    background-color: transparent;
 }
 
 .sobreTexto{
     margin: 5%;
     color: green;
+    background-color: wheat;
+    padding: 10px;
 }

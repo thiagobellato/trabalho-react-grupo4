@@ -120,11 +120,17 @@ main header {
     }
    .slider-imagem{
     margin-top: 40px;
-    width: 105em;
+    width: max-content;
     height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
    }
     
+   .dono{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
