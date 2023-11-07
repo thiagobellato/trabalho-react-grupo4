@@ -6,9 +6,9 @@
 
 ## Descrição do Projeto
 
--Paulo: calculadora e envio de email de sugestão
--Ramon: rádio e carrossel
--Thiago: consumo de ViaCep
+-Paulo: calculadora e envio de email de sugestão <br/>
+-Ramon: rádio e carrossel <br/>
+-Thiago: consumo de ViaCep <br/>
 -Yslânio: lista de desejo
 
 
